@@ -1,16 +1,16 @@
 import Header from './components/Header';
 import ListDataItem from './components/ListDataitem.js';
-import {listData} from'./Data/listData.js';
+import {ListData} from'./Data/listData.js';
 
 function App() {
-  console.log(listData);
-  return (
+    return (
     <>
       <Header />
-      <ListDataItem listData = {listData}/>
+      <ListDataItem />
     </>
     
   );
+
 }
 
 export default App;

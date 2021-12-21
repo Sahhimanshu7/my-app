@@ -11,7 +11,7 @@ function Header({bgColor,color,text}) {
 Header.defaultProps = {
   bgColor: '#6f736f',
   color: 'black',
-  text: 'Shopping List'
+  text: 'Movies List'
 };
 
 export default Header;

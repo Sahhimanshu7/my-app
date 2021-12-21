@@ -1,22 +1,9 @@
-export const listData = [{
-    id: 1,
-    type:"fruits",
-    name: "Apple",
-    price: 1.98,
+export const ListData =new Promise(()=>{
+fetch('https://imdb-api.com/en/API/SearchMovie/k_qojit1ic/inception 2010')
+  .then(response => response.json())
+  .then(data => {
+    return data;
+  })
+});
 
-},
-{
-    id: 2,
-    type:"fruits",
-    name: "Banana",
-    price: 1.99,
-
-},
-{
-    id: 3,
-    type:"fruits",
-    name: "Orange",
-    price: 1.45,
-
-}
-];
+  
