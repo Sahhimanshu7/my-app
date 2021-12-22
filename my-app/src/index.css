@@ -12,7 +12,7 @@ Header{
   word-spacing: 1.5em;
   letter-spacing: 0.5em;
 }
-card{
+.card{
   margin:5%;
   height:100%;
   display:flex;

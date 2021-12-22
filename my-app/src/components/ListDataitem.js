@@ -1,10 +1,12 @@
 import React from "react";
+import Card from "../shared/card.js";
 function ListDataItem({listData}){
-    console.log({listData})
+    console.log({listData});
     return(
-       <card>
-           <h1>{listData}</h1>
-       </card>
+       <Card>
+           <h1>{listData.id}</h1>
+           <h1>Hello</h1>
+       </Card>
     )
 }
 
