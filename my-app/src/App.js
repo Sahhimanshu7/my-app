@@ -1,17 +1,20 @@
+import React, {useState} from 'react';
 import Header from './components/Header';
 import ListDataAll from './components/ListDataAll';
 import {ListData} from'./Data/listData.js';
 
 function App() {
-  // ListData.then(data => {
-  //   console.log(data);
-  // });
-  let listData = ListData;
+
+  const [listData, setListData] = useState(ListData);
+
+  const handleDelete = (id) => {
+    setListData(listData.filter(item => item.id !== id));
+  }
 
     return (
     <>
       <Header />
-      <ListDataAll listData={listData}/>
+      <ListDataAll listData={listData} handleDelete = {handleDelete}/>
     </>
     
   );
