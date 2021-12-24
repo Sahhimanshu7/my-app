@@ -5,11 +5,12 @@
 //     return data;
 //   });
 
-export const ListData = [{
+export const ListData = [
+  {
   id: 1,
   title: 'Spider-Man',
   rating: 9.1,
-},
+  },
 {
   id:2 ,
   title: 'Inception 2010',
@@ -19,4 +20,5 @@ export const ListData = [{
   id:3,
   title:"Avengers",
   rating:8.7,
-}]  
+},
+];

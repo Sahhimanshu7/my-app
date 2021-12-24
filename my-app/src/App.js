@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import ListDataItem from './components/ListDataitem.js';
+import ListDataAll from './components/ListDataAll';
 import {ListData} from'./Data/listData.js';
 
 function App() {
@@ -7,10 +7,11 @@ function App() {
   //   console.log(data);
   // });
   let listData = ListData;
+
     return (
     <>
       <Header />
-      <ListDataItem listData={listData}/>
+      <ListDataAll listData={listData}/>
     </>
     
   );
